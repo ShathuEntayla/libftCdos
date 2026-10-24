@@ -119,7 +119,7 @@ I'm meaning this functions
 ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint
 ```
 
-All these check what the name sujests. The receive a characer (via int) and returns `0` or `1` if the question is false or true.
+All these check what the name sugests. They receive a character (via `int`) and returns `0` or `1` if the question is false or true.
 
 What is "the question"? For example "ft_isdigit": Is this char a digit? And so forth.
 
@@ -311,11 +311,19 @@ RETURN VALUE
 
 ### ft_memcpy and ft_memmove
 
-Again we have to cast so that C doesn't freak out.
+As the size of `*void` is the same as `*char`s (8 bytes), we don't need to cast it.
 
-We first check that the arrays exist.
+We don't prevent the non-existance of the arrays, as the man of the function sais clearly that it always returns dest, i never even mentions other cases.
 
-The `if` protects the function if you receive two NULLs as arrays. Without that, the loop would try to start in memory that doesn't exist so...  #SegmentationFault xD.
+```
+RETURN VALUE
+       The memcpy() function returns a pointer to dest.
+```
+
+```
+RETURN VALUE
+       The memmove() function returns a pointer to dest.
+```
 
 As in the "man" sais that we don't check overlappings, we just loop the string copying one string to the other and return the destination array.
 

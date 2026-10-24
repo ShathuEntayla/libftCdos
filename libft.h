@@ -6,7 +6,7 @@
 /*   By: fhidalgo <fhidalgo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 12:00:39 by fhidalgo          #+#    #+#             */
-/*   Updated: 2026/10/17 21:30:50 by fhidalgo         ###   ########.fr       */
+/*   Updated: 2026/10/24 02:55:27 by fhidalgo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 /* SYSTEM LIBRARIES */
 
 # include <stddef.h>
-# include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
 

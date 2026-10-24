@@ -6,7 +6,7 @@
 #    By: fhidalgo <fhidalgo@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/06 12:02:17 by fhidalgo          #+#    #+#              #
-#    Updated: 2026/10/22 16:40:46 by fhidalgo         ###   ########.fr        #
+#    Updated: 2026/10/24 02:58:19 by fhidalgo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -91,7 +91,7 @@ TEST = $(TESTABLE:.c=.o)
 
 re_s: $(TEST)
 	@ar rcs libft.a $(TEST)
-	@cc ft_itoa.c libft.a
+	@cc ft_memcpy.c libft.a
 	@echo ""
 	./a.out	
 	@echo ""
@@ -106,7 +106,7 @@ nl:
 
 g:
 	git add .
-	git commit -m "Pues ya estaría todo :) - $$(date +%H:%M:%S)"
+	git commit -m "Correciones de última hora - $$(date +%H:%M:%S)"
 	git push
 	git status
 	git log -1 --oneline

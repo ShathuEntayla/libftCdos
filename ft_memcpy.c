@@ -6,7 +6,7 @@
 /*   By: fhidalgo <fhidalgo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 13:26:17 by fhidalgo          #+#    #+#             */
-/*   Updated: 2026/10/06 21:37:16 by fhidalgo         ###   ########.fr       */
+/*   Updated: 2026/10/24 02:48:40 by fhidalgo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*s;
 	size_t				i;
 
-	if (!dest && !src)
-		return (NULL);
-	d = (unsigned char *)dest;
-	s = (const unsigned char *)src;
+	d = dest;
+	s = src;
 	i = 0;
 	while (i < n)
 	{
